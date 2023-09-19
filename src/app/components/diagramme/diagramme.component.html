@@ -1,0 +1,34 @@
+
+
+<div class="container">
+    <canvas id="barChart"></canvas>
+</div>
+
+<Script src="https://cdn.jsdelivr.net/npm/chart.js"></Script>
+
+<Script>
+   
+
+    // Créez un graphique à l'aide de Chart.js
+    const ctx = document.getElementById('barChart');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'Prix unitaire des chambres',
+          data: dataPoints,
+          backgroundColor: 'rgba(75, 192, 192, 0.2)', // Couleur de remplissage
+          borderColor: 'rgba(75, 192, 192, 1)', // Couleur de la bordure
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+</Script>

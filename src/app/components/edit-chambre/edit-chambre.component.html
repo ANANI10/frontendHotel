@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Edit Door Page</title>
+</head>
+<body>
+  <div class="modal-body">
+    <form [formGroup]="chambreForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <div class="form-group">
+          <label for="id">ID :</label>
+          <input type="number" id="id" name="id" formControlName="id" required>
+        </div>
+
+        <label name="numero" class="col-form-label"  required >Numero</label>
+        <input type="number" class="form-control" formControlName="numero" placeholder="Entrez le numero" required>
+      
+        <label name="etat" class="col-form-label">Etat</label>
+        <input type="text" class="form-control"  placeholder="Entrez l'etat de la chambre" name="etat"  formControlName="etat" required>
+     
+        <label name="prix_unitaire" class="col-form-label">Prix_Unitaire</label>
+        <input type="number" class="form-control"  placeholder="Entrez le prix_unitaire" name="prix_unitaire" formControlName="prix_unitaire"  required>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </form>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+</html>

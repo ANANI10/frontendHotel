@@ -1,0 +1,37 @@
+.zone-recherche {
+    max-width: 400px; /* Définissez la largeur maximale souhaitée */
+    margin: 8 auto; /* Centre horizontalement la zone de recherche */
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex; /* Utilisez flex pour centrer le contenu interne */
+}
+
+.zone-recherche input[type="text"] {
+    flex: 1; /* Permet à l'input de prendre toute la largeur restante */
+    border: none;
+    padding: 5px;
+}
+
+.zone-recherche button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn-small-padding {
+    padding: 1%;
+    margin: 0%;
+}
+
+body {
+    font-family: 'Roboto Medium', sans-serif;
+}
+
+.mon-texte-personnalise {
+    font-family: 'Roboto Medium', sans-serif;
+}
